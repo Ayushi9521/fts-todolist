@@ -14,10 +14,9 @@ require 'db_con.php';
 
     <title>To Do List!</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="task.css" type="text/css">
-	<script src="task.js"> </script>
+	
   </head>
-  <body onload="create_unfinished_task();">
+  <body >
 <!--navbar code-->
 <div id="content_container" class="container-fluid">
 	<div id="Task_header">
@@ -34,7 +33,7 @@ require 'db_con.php';
 <!--form for taking task as a input-->
 <div class="card" id="task_input_container">
   <div class="card-body">
-  <form  method ="POST" action="del.php" autocomplete="off">
+  <form  method ="POST" action="data.php" autocomplete="off">
     <input type="text" id="input_box" placeholder="Enter a task"/>
   <button type="button" id="input_button" class="btn btn-success">Add task
   <i class="fa fa-arrow-circle-right"></i></button>
